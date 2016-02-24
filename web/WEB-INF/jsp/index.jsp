@@ -9,11 +9,11 @@
     </head>
 
     <body>
-        <p>Hello! This is the default welcome page for a Spring Web MVC project. New Test Mangalesh2 </p>
+        <p>Hello! This is the default welcome page for a Spring Web MVC project. First New Test Mangalesh2 </p>
         <p><i>To display a different welcome page for this project, modify</i>
             <tt>index.jsp</tt> <i>, or create your own welcome page then change
                 the redirection in</i> <tt>redirect.jsp</tt> <i>to point to the new
                 welcome page and also update the welcome-file setting in</i>
             <tt>web.xml</tt>.</p>
-    </body>
+    </body> 
 </html>
