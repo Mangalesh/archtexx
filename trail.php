@@ -3,7 +3,7 @@
 echo " this is for testing today ";
 echo " great its working";
 
-echo " Welcome to Mahamed Marjook";
+echo " Welcome to New Users";
 
 ?>
 
