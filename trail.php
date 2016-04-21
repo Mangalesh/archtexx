@@ -1,11 +1,8 @@
 <?php
 
 
+echo "Build after the Jenkins";
 
-
-echo " i am testing for apache directory copy";
-
-echo "Again  Testing";
 
 ?>
 
