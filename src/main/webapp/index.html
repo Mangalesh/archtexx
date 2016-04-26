@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>CTS Demo</title>
+<link rel="stylesheet" href="css/main.css" />
+</head>
+</head>
+<body ng-app="ctsApp" ng-controller="MainController">
+	Name : {{name}}
+	<br> Company : {{company}}
+	</br>
+	<a href="#" onclick="loadUser()">Load User Details from Server </a>
+	</div>
+
+
+	<script type="text/javascript"
+		src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script>
+		var app = angular.module('ctsApp', []);
+		app.controller('MainController', function($scope, $http) {
+    	$scope.name = "Default_name";
+    	$scope.company = "Default_company";
+    
+	    loadUser = function () {
+            $http.get('rest/user/')
+                    .success(function (data) {
+                        $scope.name = data.name;
+                        $scope.company = data.company;
+                    });
+        };
+        
+	});
+</script>
+</body>
+</html>
