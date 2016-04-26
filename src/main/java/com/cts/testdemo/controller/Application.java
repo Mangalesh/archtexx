@@ -22,7 +22,7 @@ public class Application {
     User home() {
         User user = new User();
         user.setCompany("CTS");
-        user.setName("JPrakasam");
+        user.setName("Mangaleswaran");
         
         return user;
     }
