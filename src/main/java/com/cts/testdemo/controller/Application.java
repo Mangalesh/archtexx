@@ -4,7 +4,9 @@
 package com.cts.testdemo.controller;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,20 +17,31 @@ import com.cts.testdemo.model.User;
  *
  */
 @RestController
-@EnableAutoConfiguration
-public class Application {
+//@EnableAutoConfiguration
+@SpringBootApplication
+public class Application extends SpringBootServletInitializer  {
 
-    @RequestMapping("/rest/user")
+	private static Class<Application> applicationClass = Application.class;
+	
+    @RequestMapping("rest/user")
     User home() {
         User user = new User();
         user.setCompany("CTS");
-        user.setName("Mangaleswaran");
+        user.setName("JPrakasam");
         
         return user;
     }
 
+    
+    
+    
     public static void main(String[] args) throws Exception {
         SpringApplication.run(Application.class, args);
+    }
+    
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(applicationClass);
     }
 
 }
