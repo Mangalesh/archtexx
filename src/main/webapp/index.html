@@ -9,7 +9,6 @@
 </head>
 <body ng-app="ctsApp" ng-controller="MainController">
 
-
 	<table border=1>
 	<tr><td>Name :</td> <td>{{name}}</td> </tr>
 	<tr><td>Company :</td> <td>{{company}}</td> </tr>
@@ -32,12 +31,23 @@
 		app.controller('MainController', function($scope, $http) {
     	$scope.name = "Default_name";
     	$scope.company = "Default_company";
+    	$scope.age = "Default_age";
+    	$scope.pincode = "Default_Pincode";
+    	$scope.address = "Default_address";
+    	$scope.contactNo = "Default_ContactNo"; 	
+    	
     
 	    loadUser = function () {
             $http.get('rest/user/')
                     .success(function (data) {
+                	
                         $scope.name = data.name;
                         $scope.company = data.company;
+                        $scope.age = data.age;
+                        $scope.pincode = data.pincode;
+                        $scope.address = data.address;
+                        $scope.contactNo = data.contactNo;
+                        
                     });
         };
         
