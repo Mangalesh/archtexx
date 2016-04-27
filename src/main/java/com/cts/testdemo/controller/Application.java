@@ -28,7 +28,7 @@ public class Application extends SpringBootServletInitializer  {
     	
         User user = new User();
         user.setCompany("CTS");
-        user.setName("Mangaleshwaran");       
+        user.setName("Mangalesh");       
         user.setAddress("Frankfurt,Germany");
         user.setAge("34");
         user.setContactNo("9023234234");
