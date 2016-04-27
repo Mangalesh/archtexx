@@ -17,6 +17,10 @@ public class User implements Serializable {
 
 	String name;
 	String company;
+	String age;
+	String address;
+	String pincode;
+	String contactNo;
 	
 	/**
 	 * 
@@ -52,5 +56,39 @@ public class User implements Serializable {
 		this.company = company;
 	}
 
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getPincode() {
+		return pincode;
+	}
+
+	public void setPincode(String pincode) {
+		this.pincode = pincode;
+	}
+
+	public String getContactNo() {
+		return contactNo;
+	}
+
+	public void setContactNo(String contactNo) {
+		this.contactNo = contactNo;
+	}
+
+	
+	
 	
 }
