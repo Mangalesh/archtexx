@@ -8,13 +8,18 @@
 </head>
 </head>
 <body ng-app="ctsApp" ng-controller="MainController">
-	Name : {{name}}
-	<br> Company : {{company}}
-	</br>
-	<a href="#" onclick="loadUser()">Load User Details from Server </a>
-	</div>
 
 
+	<table border=1>
+	<tr><td>Name :</td> <td>{{name}}</td> </tr>
+	<tr><td>Company :</td> <td>{{company}}</td> </tr>
+	<tr><td colspan=2><a href="#" onclick="loadUser()">Load User Details from Server </a></td></tr>
+	</table>
+	
+	
+	
+	
+	
 	<script type="text/javascript"
 		src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 	<script>

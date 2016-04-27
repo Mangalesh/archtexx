@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
-Implementation-Title: testdemo
-Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Title: archtexx
+Implementation-Version: 1
 Built-By: krmangal
 Implementation-Vendor-Id: jspringangular
 Build-Jdk: 1.8.0_91
