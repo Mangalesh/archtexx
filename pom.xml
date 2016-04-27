@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>jspringangular</groupId>
-    <artifactId>testdemo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>archtexx</artifactId>
+    <version></version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
