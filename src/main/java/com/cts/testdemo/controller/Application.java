@@ -25,13 +25,14 @@ public class Application extends SpringBootServletInitializer  {
 	
     @RequestMapping("rest/user")
     User home() {
+    	
         User user = new User();
         user.setCompany("CTS");
-        user.setName("Mangalesh");       
-        user.setAddress("Frankfrut Main");
-        user.setAge("35");
-        user.setContactNo("902349234234");
-        user.setPincode("734344");
+        user.setName("Mangaleshwaran");       
+        user.setAddress("Frankfurt,Germany");
+        user.setAge("34");
+        user.setContactNo("9023234234");
+        user.setPincode("60434");
         
         return user;
     }
