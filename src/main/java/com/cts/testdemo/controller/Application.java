@@ -27,12 +27,12 @@ public class Application extends SpringBootServletInitializer  {
     User home() {
     	
         User user = new User();
-        user.setCompany("CTS");
+        user.setCompany("Archtexx");
         user.setName("Mangalesh KKR");       
         user.setAddress("Frankfurt,Germany");
         user.setAge("34");
-        user.setContactNo("9023234234");
-        user.setPincode("60434");
+        user.setContactNo("+49 90 232 4234");
+        user.setPincode("60134");
         
         return user;
     }
