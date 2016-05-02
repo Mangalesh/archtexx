@@ -31,7 +31,7 @@ public class Application extends SpringBootServletInitializer  {
         user.setName("Mangalesh KKR");       
         user.setAddress("Frankfurt,Germany");
         user.setAge("34");
-        user.setContactNo("+49 90 232 4234");
+        user.setContactNo("+49 90 232 4221");
         user.setPincode("60134");
         
         return user;
